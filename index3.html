@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tile{
+        color: brown;
+        font-size: 100px;
+        font-style: italic;
+        text-align: center; 
+    }
+    .container{
+        display: grid;
+        grid-template-areas: "above1 above2 above3 "
+                            "above4 above5 above6 ";
+        
+       padding: 1rem;
+
+    }
+    .item{
+        height: 50vh;
+        background-color: crimson;
+        border-radius: 60px;
+        margin: 10px;
+        font-size: 60px;
+        font-style: oblique;
+    
+    }
+    #item1,#item3,#item4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    #item2,#item5,#item6{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+</style>
+<body>
+    <div class="tile"> Danh Sách Các Môn Học Yêu Thích</div>
+    <div class="container">
+        <div id="item1" class="item">
+            <div>Hệ Thống Công Nghệ Web</div>
+        </div>
+        <div id="item2" class="item">
+            <div>Tiếng Anh 2</div>
+        </div>
+        <div id="item3" class="item">Cơ sở dữ liệu</div>
+        <div id="item4" class="item">Lập Trình C</div>
+        <div id="item5" class="item">Tiếng Anh 1</div>
+        <div id="item6" class="item">Hệ Thống Máy Tính</div>
+    </div>
+</body>
+</html>
